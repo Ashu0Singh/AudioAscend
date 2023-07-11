@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AudioAscend/static/css/main.780e693a.css",
+    "main.js": "/AudioAscend/static/js/main.d43fff68.js",
+    "static/media/banner-img.png": "/AudioAscend/static/media/banner-img.0412d66280a0273effa2.png",
+    "static/media/newsletter-bg.jpeg": "/AudioAscend/static/media/newsletter-bg.b6f22313149bdbb35069.jpeg",
+    "index.html": "/AudioAscend/index.html",
+    "main.780e693a.css.map": "/AudioAscend/static/css/main.780e693a.css.map",
+    "main.d43fff68.js.map": "/AudioAscend/static/js/main.d43fff68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.780e693a.css",
+    "static/js/main.d43fff68.js"
+  ]
+}
