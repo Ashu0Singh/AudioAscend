@@ -1,0 +1,106 @@
+@import "../../css-config/mixins.scss";
+
+.main-header{
+  width: 100%;
+  padding: 0 1.25rem;
+  background-color: #212121;
+  color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 99;
+
+  @include md{
+    padding:0 40px;
+  }
+
+  .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include md{
+      height: 80px
+    }
+
+    .left{
+      list-style-type: none;
+      display: none;
+      gap: 1.5rem;
+
+      @include md{
+        display: flex;
+      }
+
+      li {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    
+    .center{
+      font-size: 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      @include md{
+        font-size: 2.25rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.25rem;
+
+      @include md{
+        gap: 1.5rem;
+      }
+      svg {
+        font-size: 1.25rem;
+        cursor: pointer;
+        align-items: center;
+
+        @include md{
+          font-size: 1.5rem;
+        }
+      }
+      .cart-icon{
+        padding-top: 4px;
+        position: relative;
+        span{
+          min-width: 20px;
+          text-align: center;
+          background-color: #8e2de2;
+          padding: 2.5px;
+          position: absolute;
+          border-radius: 25px;
+          line-height: 1;
+          font-size: 14px;
+          top: -5px;
+          right: -12px;
+        }
+      }
+    }
+  }
+
+  &.sticky-header{
+    position: sticky;
+    top: 0;
+    transform: translateY(-80px);
+    animation: stickyHeader 0.3s ease forwards;
+  }
+}
+
+@keyframes stickyHeader{
+  0%{ transform: translateY(-80px)}
+  100%{ transform: translateY(0px)}
+}
