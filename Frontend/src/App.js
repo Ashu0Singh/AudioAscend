@@ -20,7 +20,14 @@ function App() {
                     <Route path='/categories' element={<Home/>}/>
                     <Route path='/products' element={<Home/>}/>
                     <Route path='/category/:id' element={<Category />}/>
-                    <Route path='/product/:id' element={<SingleProduct/>}/>
+                    <Route path='/product/:id' element={<SingleProduct />} />
+                    
+                    <Route path='/AudioAscend/' element={<Home />} />
+                    <Route path='/AudioAscend/about' element={<Home/>}/>
+                    <Route path='/AudioAscend/categories' element={<Home/>}/>
+                    <Route path='/AudioAscend/products' element={<Home/>}/>
+                    <Route path='/AudioAscend/category/:id' element={<Category />}/>
+                    <Route path='/AudioAscend/product/:id' element={<SingleProduct/>}/>
                 </Routes>
                 <NewsLetter />
                 <Footer />
